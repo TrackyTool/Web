@@ -13,6 +13,45 @@ COLORS:
 - grey30: #363636
 */
 
+.img-section {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+}
+
+.screen-image {
+  height: 70vh;
+  position: fixed;
+  bottom: 10vh;
+  filter: blur(5px);
+  opacity: 0;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.screen-image-small {
+  height: 30vh;
+  position: fixed;
+  bottom: 30vh;
+  filter: blur(5px);
+  opacity: 0;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.img-section.active .screen-image {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.img-section.active .screen-image-small {
+  opacity: 1;
+  filter: blur(0);
+}
+
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
