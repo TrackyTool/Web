@@ -34,7 +34,7 @@ COLORS:
 }
 
 .screen-image-small {
-  height: 30vh;
+  height: 25vh;
   position: fixed;
   bottom: 30vh;
   filter: blur(5px);
@@ -531,6 +531,10 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.fs-small {
+  font-size: 0.8rem !important;
 }
 
 .display-1 {
